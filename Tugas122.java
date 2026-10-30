@@ -8,11 +8,14 @@ public class Tugas122 {
         int n = sc.nextInt();
 
         int i = 1;
+        int total = 0;
 
         while (i <= n) {
             int j = 1;
             while (j <= i) {
                 System.out.print(j+ " ");
+
+                total++;
                 j++;
                 
             }
@@ -20,6 +23,8 @@ public class Tugas122 {
             i++;
             
         }
+
+        System.out.println("Total angka tercetak: " + total);
 
     }
     
