@@ -19,6 +19,18 @@ public class NilaiKelompok22 {
                 System.out.println("Kelompok " + nomorKelompok);
                 double totalNilai =0;
 
+                for (int j= 1; j <= jumlahPenilai; j++) {
+                    int nilai;
+                    do {
+                        System.out.print("Nilai dari penilai " + j + ": ");
+                        nilai = sc.nextInt();
+                        if (nilai < 0 || nilai > 100){
+                            System.out.println("Nilai harus 0-100. Ulangi input!");
+                        } 
+                        
+                    } while (nilai < 0 || nilai > 100);
+                        totalNilai += nilai;
+                }
                 nomorKelompok++;
                 
             }
