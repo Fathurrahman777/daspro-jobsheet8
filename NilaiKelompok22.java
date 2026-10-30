@@ -17,7 +17,7 @@ public class NilaiKelompok22 {
 
             while (nomorKelompok <= jumlahKelompok) {
                 System.out.println("Kelompok " + nomorKelompok);
-                double totalNilai =0;
+                double totalNilai = 0;
 
                 for (int j= 1; j <= jumlahPenilai; j++) {
                     int nilai;
@@ -30,14 +30,16 @@ public class NilaiKelompok22 {
                         
                     } while (nilai < 0 || nilai > 100);
                         totalNilai += nilai;
-                         while (nilai < 0 || nilai > 100);
+                        
                 }
-                nomorKelompok++;
                 double rataNilai = totalNilai / jumlahPenilai;
                 System.out.println("Kelompok " + nomorKelompok + ": nilai rata-rata = " + rataNilai);
                 if (rataNilai > rataTertinggi) {
-
+                    rataTertinggi = rataNilai;
+                    kelompokTerbaik = nomorKelompok;
                 }
+                nomorKelompok++;
+                
             }
             System.out.println("==============================");
             System.out.println("Kelompok terbaik    : " + kelompokTerbaik);
