@@ -25,6 +25,10 @@ public class Tugas222 {
             i++;
         }
 
+        System.out.println("Jumlah seluruh angka: " +total);
+        
+        sc.close();
+
     }
     
 }
