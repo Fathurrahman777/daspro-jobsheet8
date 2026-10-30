@@ -30,13 +30,20 @@ public class NilaiKelompok22 {
                         
                     } while (nilai < 0 || nilai > 100);
                         totalNilai += nilai;
+                         while (nilai < 0 || nilai > 100);
                 }
                 nomorKelompok++;
-                
-            }
-        }
+                double rataNilai = totalNilai / jumlahPenilai;
+                System.out.println("Kelompok " + nomorKelompok + ": nilai rata-rata = " + rataNilai);
+                if (rataNilai > rataTertinggi) {
 
-        
+                }
+            }
+            System.out.println("==============================");
+            System.out.println("Kelompok terbaik    : " + kelompokTerbaik);
+            System.out.println("Rata-rata Tertinggi : " + rataTertinggi);
+        }
+        sc.close();
+
     }
-    
 }
