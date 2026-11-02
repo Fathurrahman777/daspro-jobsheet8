@@ -14,6 +14,7 @@ public class Tugas322 {
             int totalSemua = 0;
             int tokoTerbanyak = 0;
             int barangTerbanyak = -1;
+            String hasil = "";
 
             for (int i = 1; i <= jumlahToko; i++) {
                 System.out.print("Masukkan jumlah pelanggan di toko " + i + ": ");
@@ -36,14 +37,19 @@ public class Tugas322 {
                             totalSemua += barang;
                             j++;
                         }
-                    }  
-                      
-                    
+                    }
+                     hasil += "Toko " + i + "- pelanggan: " + pelanggan + ", total barang: " + totalBarang + "\n";
                    
+                    if (totalBarang > barangTerbanyak) {
+                        barangTerbanyak = totalBarang;
+                        tokoTerbanyak = i;
+                    }
                 }
             }      
+        
+       
         }
-            
+        sc.close();
     }
 
 }
