@@ -38,7 +38,7 @@ public class Tugas322 {
                             j++;
                         }
                     }
-                     hasil += "Toko " + i + "- pelanggan: " + pelanggan + ", total barang: " + totalBarang + "\n";
+                     hasil += "Toko " + i + " - pelanggan: " + pelanggan + ", total barang: " + totalBarang + "\n";
                    
                     if (totalBarang > barangTerbanyak) {
                         barangTerbanyak = totalBarang;
@@ -47,7 +47,10 @@ public class Tugas322 {
                 }
             }      
         
-       
+        System.out.println("==============================");
+        System.out.println(hasil);
+        System.out.println("Total barang Seluruh Toko:" + totalSemua);
+        System.out.println("Toko dengan barang terbanyak: " + tokoTerbanyak);
         }
         sc.close();
     }
